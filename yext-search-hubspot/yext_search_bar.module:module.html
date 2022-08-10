@@ -1,0 +1,67 @@
+
+  <head>
+    <meta charset="utf-8">
+    <title>{{ content.html_title }}</title>
+    <meta name="description" content="{{ content.meta_description }}">
+     <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://assets.sitescdn.net/answers-search-bar/v1.0/answers.css"
+     > 
+    {% require_js %} <script src="https://assets.sitescdn.net/answers-search-bar/v1.0/answerstemplates.compiled.min.js"></script> {% end_require_js %}
+    {% require_js %} <script
+      src="https://assets.sitescdn.net/answers-search-bar/v1.0/answers.min.js"
+      onload="ANSWERS.domReady(initAnswers)"
+      async
+      defer
+      ></script> {% end_require_js %}
+    {% require_js %} <script> 
+      function initAnswers() {
+        ANSWERS.init({
+          apiKey: "{{ module.api_key }}",
+          experienceKey: "{{ module.experience_key|escapejs }}",
+          experienceVersion: "PRODUCTION",
+          locale: "{{ module.locale }}", 
+          businessId: "{{ module.business_id }}",
+          templateBundle: TemplateBundle.default,
+          onReady: function() {
+            ANSWERS.addComponent("SearchBar", {
+              container: ".search_form",
+              name: "search-bar", //Must be unique for every search bar on the same page
+              redirectUrl: "{{ module.redirect_url|escapejs }}",
+              placeholderText: "{{ module.search_bar_placeholder_text|escapejs }}",
+              submitIcon: "{{ module.style.submit_icon }}"
+            });
+          },
+        });
+      }
+    </script> {% end_require_js %}
+  </head>
+    <body>
+      <div class="search_form"></div>
+    </body>
+
+
+  {% require_css %}
+    <style> 
+      {% scope_css %}
+        .yxt-SearchBar-button, 
+        .yxt-SearchBar-clear,
+        .yxt-SearchBar-form,
+        .yxt-AutoComplete-wrapper {
+          background-color: {{ module.style.search_bar_background_color.css }}; 
+        } 
+       .yxt-SearchBar-container {
+          {{ module.style.search_bar_border_style.css }};
+          {{ module.style.search_bar_spacing.css }};
+         width: {{ module.style.search_bar_width }}%;
+         height: {{ module.style.search_bar_height }}%;
+        }
+      
+      .yxt-SearchBar-input {
+        {{ module.style.search_bar_font.css }};
+      }
+     {% end_scope_css %}
+    </style>
+{% end_require_css %}
+
