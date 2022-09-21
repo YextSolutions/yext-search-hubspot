@@ -1,0 +1,200 @@
+[ {
+  "id" : "76e2864b-2604-2ad7-b33a-668c86aa2402",
+  "name" : "domain",
+  "display_width" : null,
+  "label" : "Domain",
+  "help_text" : "Replace this with your domain. You can find this in the Yext platform from your site.",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "https://.*",
+  "validation_error_message" : "Domain must be formatted as a full domain, including https://",
+  "placeholder" : "https://...",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "https://REPLACE_ME"
+}, {
+  "id" : "fe86d06e-91ac-3b27-3e9b-78d67029d9d3",
+  "name" : "prompt_1",
+  "display_width" : null,
+  "label" : "Prompt 1",
+  "help_text" : "Universal prompts appear as a drop-down list as soon as the user inputs their cursor into the search bar. Include popular queries or top Frequently Asked Questions for the business! ",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Prompt_1",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Prompt_1"
+}, {
+  "id" : "fb1c6c43-cf61-7034-fa1f-918d3bd0c061",
+  "name" : "prompt_2",
+  "display_width" : null,
+  "label" : "Prompt_2",
+  "help_text" : "Universal prompts appear as a drop-down list as soon as the user inputs their cursor into the search bar. Include popular queries or top Frequently Asked Questions for the business! ",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Prompt_2",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Prompt_2"
+}, {
+  "id" : "3e8552b5-a553-a138-b686-598fa521e413",
+  "name" : "prompt_3",
+  "display_width" : null,
+  "label" : "Prompt_3",
+  "help_text" : "Universal prompts appear as a drop-down list as soon as the user inputs their cursor into the search bar. Include popular queries or top Frequently Asked Questions for the business! ",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Prompt_3",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Prompt_3"
+}, {
+  "id" : "3e582fcd-af90-1011-3b97-c910265d6304",
+  "name" : "header_text",
+  "display_width" : null,
+  "label" : "Header Text",
+  "help_text" : "Use a header as a call out or your desired header.",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "We're here to help.",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Search here"
+}, {
+  "id" : "d303279a-5739-3e86-7235-2d794b51d938",
+  "name" : "subtitle_text",
+  "display_width" : null,
+  "label" : "Subtitle Text",
+  "help_text" : "Use a subtitle as a short description or your desired subtitle.",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "Find ...",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Find ..."
+}, {
+  "id" : "ae32f8e7-caa7-991c-6978-0cdac8dfe30b",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "1769bcc4-067c-987b-afa4-8823a1c2e8e4",
+    "name" : "button_color",
+    "display_width" : null,
+    "label" : "Button Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "8d646225-7022-655e-0d68-699e2cdfa167",
+    "name" : "button_text_color",
+    "display_width" : null,
+    "label" : "Button Text color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "29fcc2dc-1267-4360-8a1c-e2fdef43ebe5",
+    "name" : "panel_background_color",
+    "display_width" : null,
+    "label" : "Panel Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "4a6006fa-14f5-9974-ef2b-2fd3e4782d91",
+    "name" : "panel_text_color",
+    "display_width" : null,
+    "label" : "Panel Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "122362ed-a6e2-851f-1fc1-77b265429f75",
+    "name" : "button_alignment",
+    "display_width" : null,
+    "label" : "Button Alignment",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "right", "Right" ], [ "left", "Left" ] ],
+    "type" : "choice",
+    "default" : "right"
+  }, {
+    "id" : "35b5b9cd-bf75-63ee-005f-21dd40babcab",
+    "name" : "offset_horizontal",
+    "display_width" : null,
+    "label" : "Offset Horizontal",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 20
+  }, {
+    "id" : "f4e0f2d8-b4f8-4835-9092-dd4f05326b23",
+    "name" : "offset_vertical",
+    "display_width" : null,
+    "label" : "Offset Vertical",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number",
+    "default" : -50
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    },
+    "button_text_color" : {
+      "color" : "#000000",
+      "opacity" : 100
+    },
+    "panel_background_color" : {
+      "color" : "#000000",
+      "opacity" : 100
+    },
+    "panel_text_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    },
+    "button_alignment" : "right",
+    "offset_horizontal" : 20,
+    "offset_vertical" : -50
+  }
+} ]

@@ -1,0 +1,38 @@
+
+  {% require_js %} <script type="text/javascript" async src="https://answers.yext.com/overlay.js"></script> {% end_require_js %}
+  {% require_js %} <script>
+  window.YxtAnswersOverlaySettings = {
+      domain: '{{ module.domain|escapejs}}', 
+      // experiencePath: 'path.html'
+      // hideDefaultButton: true,
+      // customSelector: "#customOverlayButton",      
+      offset: {  
+        horizontal: '{{ module.style.offset_horizontal }}px',
+        vertical: '{{ module.style.offset_vertical }}px', 
+      },
+      button: {
+        alignment: '{{ module.style.button_alignment|escapejson }}',
+        //text: 'Search',
+        color: {  //update with your desired colors
+          text: '{{ module.style.button_text_color.color }}' ,
+          background: '{{ module.style.button_color.color }}',
+        },
+      },
+      panel: {  //update with your desired information
+        header: '{{ module.header_text|escapejson }}',
+        subtitle: '{{ module.subtitle_text|escapejson }}',
+        color: {
+          text: '{{ module.style.panel_text_color.color }} ',
+          background: '{{ module.style.panel_background_color.color }}'
+        },
+      },
+      
+      // hideDefaultButton: true,
+      // customSelector: '#myButton', // Uncomment button on line 5
+      prompts: [
+        { text: '{{ module.prompt_1|escapejson }}' },
+        { text: '{{ module.prompt_2|escapejson }}' },
+        { text: '{{ module.prompt_3|escapejson }}' },
+      ]
+    };
+  </script>  {% end_require_js %}

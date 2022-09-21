@@ -1,0 +1,268 @@
+[ {
+  "id" : "7f7bd3b4-92da-8cb9-c776-14a70c6bb1f4",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "199be7d3-eac8-f339-dab1-ce9933208001",
+    "name" : "submit_icon",
+    "display_width" : null,
+    "label" : "Submit Icon",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "briefcase", "Briefcase" ], [ "calendar", "Calendar" ], [ "callout", "Callout" ], [ "chevron", "Chevron" ], [ "close", "Close" ], [ "directions", "Directions" ], [ "document", "Document" ], [ "elements", "Elements" ], [ "email", "Email" ], [ "gear", "Gear" ], [ "info", "Info" ], [ "kabob", "Kabob" ], [ "light_bulb", "Light Bulb" ], [ "link", "Link" ], [ "magnifying_glass", "Maginfying Glass" ], [ "mic", "Microphone" ], [ "office", "Office" ], [ "pantheon", "Pantheon" ], [ "person", "Person" ], [ "phone", "Phone" ], [ "pin", "Pin" ], [ "receipt", "Receipt" ], [ "star", "Star" ], [ "support", "Support" ], [ "tag", "Tag" ], [ "thumb", "Thumb" ], [ "window", "Window" ] ],
+    "type" : "choice",
+    "default" : ""
+  }, {
+    "id" : "04596a49-b74a-088c-3ff6-631d283c9afe",
+    "name" : "search_bar_background_color",
+    "display_width" : null,
+    "label" : "search bar background color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "30d80309-42a8-d202-0cbd-d9126317c9a7",
+    "name" : "search_bar_border_style",
+    "display_width" : null,
+    "label" : "Search Bar Border Style",
+    "required" : false,
+    "locked" : false,
+    "allow_custom_border_sides" : false,
+    "type" : "border",
+    "default" : {
+      "top" : {
+        "style" : "solid",
+        "color" : "#d3d3d3",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "bottom" : {
+        "style" : "solid",
+        "color" : "#d3d3d3",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "left" : {
+        "style" : "solid",
+        "color" : "#d3d3d3",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "right" : {
+        "style" : "solid",
+        "color" : "#d3d3d3",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      }
+    }
+  }, {
+    "id" : "e7880f98-b67c-b84f-dd05-3a284f257490",
+    "name" : "search_bar_spacing",
+    "display_width" : null,
+    "label" : "search bar spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "9c8b325c-7a5f-492a-237a-10eeb8f27c72",
+    "name" : "search_bar_width",
+    "display_width" : null,
+    "label" : "Search Bar Width",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 100
+  }, {
+    "id" : "1fb4b860-7106-f685-25ef-d973515ecfa4",
+    "name" : "search_bar_height",
+    "display_width" : null,
+    "label" : "Search Bar Height",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "max" : 100,
+    "step" : 1,
+    "type" : "number",
+    "default" : 100
+  }, {
+    "id" : "5ff8fd15-b222-b6b6-5858-aa51b7addc84",
+    "name" : "search_bar_font",
+    "display_width" : null,
+    "label" : "Search Bar Font",
+    "required" : false,
+    "locked" : false,
+    "load_external_fonts" : true,
+    "type" : "font",
+    "default" : {
+      "styles" : { },
+      "variant" : "regular",
+      "font" : "Open Sans",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE",
+      "size" : 18
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "submit_icon" : "",
+    "search_bar_background_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    },
+    "search_bar_border_style" : {
+      "top" : {
+        "style" : "solid",
+        "color" : "#d3d3d3",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "bottom" : {
+        "style" : "solid",
+        "color" : "#d3d3d3",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "left" : {
+        "style" : "solid",
+        "color" : "#d3d3d3",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "right" : {
+        "style" : "solid",
+        "color" : "#d3d3d3",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      }
+    },
+    "search_bar_spacing" : { },
+    "search_bar_width" : 100,
+    "search_bar_height" : 100,
+    "search_bar_font" : {
+      "styles" : { },
+      "variant" : "regular",
+      "font" : "Open Sans",
+      "fallback" : "sans-serif",
+      "font_set" : "GOOGLE",
+      "size" : 18
+    }
+  }
+}, {
+  "id" : "2b9d50ec-ea83-ac58-a4a0-54156f2a5c35",
+  "name" : "api_key",
+  "display_width" : null,
+  "label" : "API Key",
+  "help_text" : "Navigate to your Yext Search Experience Details page to find your API Key.",
+  "required" : true,
+  "locked" : true,
+  "validation_regex" : "",
+  "placeholder" : "Yext_Search_API_key",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "d6aa9846-d10a-564f-7ff6-6ae956593fa9",
+  "name" : "experience_key",
+  "display_width" : null,
+  "label" : "Experience Key",
+  "help_text" : "Navigate to your Yext Search Experience Details page to find your API Key.",
+  "required" : true,
+  "locked" : true,
+  "validation_regex" : "",
+  "placeholder" : "Yext_Experience_Key",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "a06dded3-9b61-3f61-cda2-13a8e06ff5f9",
+  "name" : "locale",
+  "display_width" : null,
+  "label" : "Locale",
+  "help_text" : "The locale for your search experience.",
+  "required" : true,
+  "locked" : true,
+  "validation_regex" : "",
+  "placeholder" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "en"
+}, {
+  "id" : "f8c59528-6e70-de95-cae4-17310ed83ad0",
+  "name" : "business_id",
+  "display_width" : null,
+  "label" : "Business ID",
+  "help_text" : "Navigate to your Yext Search Experience Details page to find your business ID.",
+  "required" : true,
+  "locked" : true,
+  "validation_regex" : "",
+  "placeholder" : "Yext_Business_ID",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "7badcc27-d206-1bca-016a-402fb241703b",
+  "name" : "url_field",
+  "display_width" : null,
+  "label" : "Redirect URL",
+  "help_text" : "This is the URL of your search results page.",
+  "required" : true,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT" ],
+  "type" : "url",
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "https://www.domain.com",
+    "content_id" : null
+  }
+}, {
+  "id" : "2f76e282-eac4-a189-3d76-342f82baf21c",
+  "name" : "search_bar_placeholder_text",
+  "display_width" : null,
+  "label" : "Search Bar Placeholder Text",
+  "required" : true,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Search..."
+} ]
